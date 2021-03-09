@@ -33,8 +33,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: sleep 11m
-      
       # run tests!
       - run: npm test
       
